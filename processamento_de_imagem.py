@@ -14,7 +14,7 @@ def preprocess_image(input_path, output_path):
     gray_clahe = clahe.apply(cinza)
 
     # Equaliza o histograma da imagem
-    img_eq = cv2.equalizeHist(gray_clahe)
+    # img_eq = cv2.equalizeHist(gray_clahe)
     
     # Aplica a binarização adaptativa
     adaptive_thresh = cv2.adaptiveThreshold(gray_clahe, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)
